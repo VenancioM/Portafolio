@@ -1,0 +1,43 @@
+.en{
+    color:#fff;
+}
+
+.es{
+    color:#fff;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #2eafec;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #2eafec;
+}
+
+.check:checked:before{
+    background: #fff;
+
+}
